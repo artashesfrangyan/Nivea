@@ -1,0 +1,455 @@
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Nivea";
+    src: url("../fonts/Nivea-Regular.woff2") format("woff2");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Nivea";
+    src: url("../fonts/Nivea-Bold.woff2") format("woff2");
+    font-weight: 800;
+}
+
+h1, h2, h3, h4 {
+    font-family: "Nivea";
+    font-weight: 800
+}
+
+h1 {
+    font-size: 48px;
+    line-height: 58px;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 38px;
+}
+
+h3 {
+    font-size: 24px;
+    line-height: 29px;
+}
+
+h4 {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+body {
+    font-family: "Nivea";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin: 0px;
+    color: rgba(0, 50, 160, 1);
+}
+
+.container {
+    width: 1044px;
+    margin: auto;
+}
+
+.whitespace {
+    height: 161px;
+}
+
+.title {
+    text-transform: uppercase;
+}
+
+.header {
+    background-color: white;
+    position: fixed;
+    width: 100%;
+}
+
+.header-top {
+    display: flex;
+    height: 73px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin: auto;
+    margin-right: 12px;
+}
+
+.header-list {
+    list-style: none;
+    padding: 0px;
+}
+
+.header__link {
+    text-decoration: none;
+    color: rgba(0, 50, 160, 1);
+}
+
+.header-list__item {
+    display: inline;
+    text-transform: uppercase;
+    margin-left: 27px;
+}
+
+.header-buttons {
+    text-align: right;
+    width: 162.79px;
+    display: flex;
+    justify-content: space-between;
+    margin-right: 6px;
+    margin-bottom: 2px;
+}
+
+.header-button {
+    border: none;
+    background: none;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+.header-inner {
+    display: inline-flex;
+}
+
+.header-middle {
+    border-top: 1px solid #D6DCEC;
+    border-bottom: 1px solid #D6DCEC;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.header-wrapper {
+    display: inline-flex;
+
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-path {
+    margin-left: -1px;
+}
+
+.header-path__link {
+    position: relative;
+    bottom: 1px;
+}
+
+.header-path__link--home {
+    bottom: 0px;
+    text-decoration: none;
+}
+
+.header-path__link:first-child::after {
+    position: relative;
+    bottom: 2px;
+    margin-left: 0px;
+}
+
+.header-path__link::after {
+    content: "";
+    border-top: 1px solid #00136F;
+    border-right: 1px solid #00136F;
+    display: inline-flex;
+    height: 8px;
+    width: 8px;
+    transform: rotate(45deg);
+    cursor: default;
+    position: relative;
+    bottom: 1px;
+    margin-right: 4px;
+    margin-left: 3px;
+}
+
+.header-path__link:last-child::after {
+    display: none;
+}
+
+.header-arrow {
+    margin-bottom: 2px;
+    border: none;
+    background: none;
+    font-size: 14px;
+    line-height: 17px;
+    color: rgba(0, 50, 160, 1);
+    padding: 0px;
+}
+
+.header-arrow__image {
+    margin-right: 6px;
+    margin-top: 3px;
+}
+
+.header-options {
+    max-width: 1044px;
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #EFF5FA;
+    border-radius: 5px;
+    margin-top: 14px
+}
+
+.header-option {
+    padding: 9px 41px 10px 41px;
+    border: none;
+    background: none;
+    color: #00136F;
+    font-family: "Nivea";
+    font-size: 14px;
+    line-height: 17px;
+    cursor: pointer;
+}
+
+.promo {
+    background: url("../images/hero.jpg") no-repeat center;
+    background-size: cover;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.promo-text {
+    background: white;
+    width: 500px;
+    height: 275px;
+    text-align: center;
+    margin-right: 58px;
+}
+
+.promo__title {
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.about-product {
+    display: flex;
+    justify-content: center;
+    max-width: 870px;
+    margin: auto;
+    text-align: center;
+    margin-top: 67px;
+    flex-direction: column;
+}
+
+.about-product-content {
+    column-count: 2;
+    margin-top: 42px;
+    margin-bottom: 7px;
+}
+
+.about-product__title {
+    max-width: 660px;
+    margin: auto
+}
+
+.about-product__text--left-align {
+    text-align: left;
+    margin-top: 73px;
+}
+
+.about-product__text--centered {
+    max-width: 700px;
+    text-align: center;
+    margin: auto
+}
+
+.about-product-image {
+    background-image: linear-gradient(180deg, #E61C8A 0%, #FFBFE1 100%);
+    width: 405px;
+    height: 250px;
+    margin-left: 21px;
+}
+
+.about-product__image {
+    margin-top: 38px;
+    margin-left: 15px;
+}
+
+.product-image {
+    margin-top: 23px;
+    margin-bottom: 13px;
+}
+
+.footer {
+    color: white;
+}
+
+.footer-top {
+    background-color: #5B75B1;
+    height: 475px;
+}
+
+.footer-wrapper {
+    padding-top: 54px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.footer-info {
+    width: 523px;
+    border-right: 1px solid white;
+    height: 371px;
+}
+
+.footer-docs {
+    height: 152px;
+    border-bottom: 1px solid white;
+    width: 472px;
+}
+
+.footer-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+}
+
+.footer__link {
+    color: white;
+    font-size: 14px;
+    margin-bottom: 9px;
+    border-bottom: 1px solid white;
+    line-height: 12px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.document-link {
+    margin-bottom: 5px;
+}
+
+.about-nivea {
+    margin-top: 36px
+}
+
+.about-nivea-title {
+    margin-bottom: 17px
+}
+
+.about-nivea__link {
+    vertical-align: text-top;
+}
+
+.footer-link-wrapper {
+    display: inline-block;
+    padding-right: 11px;
+    border-right: 1px solid white;
+    height: 15px;
+    margin-right: 7px;
+}
+
+.footer-link-wrapper:nth-child(4),
+.footer-link-wrapper:nth-child(6) {
+    border-right: none
+}
+
+.footer-media {
+    margin-left: 50px;
+}
+
+.footer-feed {
+    padding-bottom: 39px;
+    border-bottom: 1px solid white;
+}
+
+.footer-feed__text {
+    font-size: 14px;
+    line-height: 17px;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+.email-field::placeholder {
+    font-family: "Nivea";
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.feed-email {
+    margin-top: 7px;
+}
+
+.email-field {
+    border-radius: 5px;
+    padding: 11px 0px 13px 18px;
+    BORDER: none;
+    width: 300px;
+    height: 46px;
+    margin-bottom: 20px;
+}
+
+.email-submit {
+    padding: 14px 40px 13px 40px;
+    border: none;
+    border-radius: 100px;
+}
+
+.feed-email__submit {
+    font-family: "Nivea";
+    color: white;
+    background-color: #06369D;
+    font-weight: 800;
+    font-size: 16px;
+    line-height: 19px;
+    text-transform: uppercase;
+}
+
+.footer-social-media {
+    padding-top: 30px
+}
+
+.footer-social-media-title {
+    margin-bottom: 5px;
+}
+
+.footer-social-media-link {
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+    display: inline-block;
+    border: 1px solid white;
+    margin-right: 6px;
+}
+
+.footer-vk {
+    background: url("../images/footer vk.svg") no-repeat center;
+}
+
+.footer-insta {
+    background: url("../images/footer insta.svg") no-repeat center;
+}
+
+.footer-youtube {
+    background: url("../images/footer youtube.svg") no-repeat center;
+}
+
+.footer-bottom {
+    height: 60px;
+    background-color: #06369D;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyright {
+    font-size: 14px;
+    line-height: 17px;
+    color: white;
+    opacity: 0.5;
+    display: inline-block;
+}
+
+.beiersdorf-logo {
+    height: 22px
+}
