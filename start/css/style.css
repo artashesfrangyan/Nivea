@@ -215,10 +215,11 @@ body {
 .promo {
     background: url("../images/hero.jpg") no-repeat center;
     background-size: cover;
-    height: 650px;
+    height: 658px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    margin-bottom: 65px
 }
 
 .promo-text {
@@ -226,7 +227,8 @@ body {
     width: 500px;
     height: 275px;
     text-align: center;
-    margin-right: 58px;
+    margin-right: 54px;
+    margin-top: -7px
 }
 
 .promo__title {
@@ -236,13 +238,12 @@ body {
 
 .about-product {
     display: flex;
-    justify-content: center;
     max-width: 870px;
     margin: auto;
     text-align: center;
-    margin-top: 67px;
     flex-direction: column;
     margin-bottom: 34px;
+    margin-top: 50px;
 }
 
 .about-product-content {
@@ -251,9 +252,23 @@ body {
     margin-bottom: 7px;
 }
 
+.about-product-content {
+    column-count: 2;
+    margin-top: 42px;
+    margin-bottom: 7px;
+}
+
+.about-product-content--care-gel {
+    margin-top: 52px;
+    grid-gap: 60px;
+    display: grid;
+    grid-template-columns: 405px 403px;
+    margin-bottom: 49px;
+}
+
 .about-product__title {
-    max-width: 660px;
-    margin: auto
+    max-width: 659px;
+    margin: auto;
 }
 
 .about-product__text--left-align {
@@ -267,16 +282,29 @@ body {
     margin: auto
 }
 
-.about-product-image {
+.about-product-image--care-cream {
     background-image: linear-gradient(180deg, #E61C8A 0%, #FFBFE1 100%);
-    width: 405px;
     height: 250px;
     margin-left: 21px;
 }
 
-.about-product__image {
+.about-product-image {
+    width: 405px;
+}
+
+.about-product-image--care-gel {
+    background-image: linear-gradient(180deg, #82D4FF 0%, #D6F0FF 100%);
+    height: 200px;
+}
+
+.about-product__image--care-cream {
     margin-top: 38px;
-    margin-left: 15px;
+    margin-left: 16px;
+}
+
+.about-product__image--care-gel {
+    margin-top: -40px;
+    margin-right: -2px
 }
 
 .product-image {
@@ -288,19 +316,20 @@ body {
     text-align: center;
     background-color: #F7F8FA;
     height: 300px;
-    padding-top: 12px;
+    padding-top: 13px;
+    margin-bottom: 30px;
 }
 
 .feature-list {
     padding: 0px;
     display: inline-block;
-    margin-top: -10px;
+    margin-top: -14px;
 }
 
 .feature__item {
     list-style: none;
     text-align: left;
-    line-height: 35px;
+    line-height: 44px;
 }
 
 .checkbox {
@@ -327,6 +356,20 @@ body {
     margin-right: 4px;
     margin-left: 5px;
     align-items: center;
+}
+
+.button {
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 56px;
+    color: white;
+    background-color: #0032A0;
+    border-radius: 100px;
+    width: 147px;
+    height: 56px;
+    text-align: center;
+    margin: auto;
 }
 
 .footer {
