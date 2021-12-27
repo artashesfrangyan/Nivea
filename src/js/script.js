@@ -1,17 +1,6 @@
 'use strict';
-let goTopBtn = document.querySelector('.header-arrow');
-function trackScroll() {
-    
-    let scrolled = window.pageYOffset;
-    let coords = document.documentElement.clientHeight;
 
-    if (scrolled > coords) {
-        goTopBtn.classList.add('back_to_top-show');
-    }
-    if (scrolled < coords) {
-        goTopBtn.classList.remove('back_to_top-show');
-    }
-}
+let goTopBtn = document.querySelector('.header-arrow');
 
 function backToTop() {
     if (window.pageYOffset > 0) {
@@ -19,6 +8,5 @@ function backToTop() {
         setTimeout(backToTop, 0);
     }
 }
-  
-window.addEventListener('scroll', trackScroll);
+
 goTopBtn.addEventListener('click', backToTop);
