@@ -213,7 +213,7 @@ body {
 }
 
 .promo {
-    background: url("../images/hero.jpg") no-repeat center;
+    background: url("../images/hero.jpg") no-repeat top center;
     background-size: cover;
     height: 658px;
     display: flex;
@@ -374,6 +374,10 @@ body {
     height: 56px;
     text-align: center;
     margin: auto;
+    cursor: pointer;
+    font-family: "Nivea";
+    border: none;
+    display: block;
 }
 
 .result {
@@ -388,7 +392,6 @@ body {
 .wrapper--gray-background {
     background-color: #F7F8FA;
     text-align: center;
-    height: 605px;
 }
 
 .grid-wrapper {
@@ -429,8 +432,36 @@ body {
 }
 
 .item {
-    height: 620px;
     background-color: white;
+    padding-bottom: 42px;
+}
+
+.button-buy--bordered {
+    background: none;
+    border: 1px solid #06369D;
+    color: #06369D;
+    height: 50px;
+    width: 144px;
+    line-height: 50px;
+}
+
+.marketplace-wrapper {
+    display: grid;
+    grid-template-columns: 144px 174.4px;
+    grid-template-rows: 30px 50px;
+    margin-top: 34px;
+    column-gap: 43px;
+    row-gap: 26px;
+    margin-left: 60px;
+}
+
+.item-title {
+    width: 342px;
+    margin: auto;
+}
+
+.wildberries {
+    vertical-align: middle;
 }
 
 .footer {
