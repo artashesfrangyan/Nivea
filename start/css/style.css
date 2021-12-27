@@ -376,6 +376,63 @@ body {
     margin: auto;
 }
 
+.result {
+    margin-bottom: 29px;
+}
+
+.result-title {
+    margin-top: 0px;
+    margin-bottom: 14px
+}
+
+.wrapper--gray-background {
+    background-color: #F7F8FA;
+    text-align: center;
+    height: 605px;
+}
+
+.grid-wrapper {
+    display: grid;
+    grid-template-columns: 403px 409px;
+    grid-gap: 62px;
+    padding-top: 28px;
+    margin-top: 29px; 
+    padding-top: 49px;
+}
+
+.text-wrapper {
+    margin:auto
+}
+
+.article {
+    margin: 0px;
+}
+
+.article-title {
+    margin: 0px;
+    margin-bottom: 13px;
+}
+
+.grid-wrapper--no-padding {
+    padding: 0px;
+}
+
+.items {
+    display: grid;
+    grid-template-columns: 468px 468px;
+    column-gap: 72px;
+    row-gap: 50px;
+    justify-content: center;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-top: 2px
+}
+
+.item {
+    height: 620px;
+    background-color: white;
+}
+
 .footer {
     color: white;
 }
